@@ -1,0 +1,215 @@
+/* Fuentes importadas */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #cce7ff 0%, #e6f2ff 100%);
+    color: #004a99;
+    text-align: center;
+    padding: 3.5rem 1rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    font-family: 'Merriweather', serif;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.04em;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #e6f2ff;
+    border-bottom: 1.5px solid #b3d1ff;
+    box-shadow: 0 2px 8px rgba(0, 74, 153, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0.8rem 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #005999;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #002d66;
+    outline: none;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 3rem 8%;
+    background-color: #f9fcff;
+}
+
+/* SECTIONS */
+section {
+    background-color: #f0f8ff;
+    border-left: 6px solid #99ccff;
+    border-radius: 12px;
+    padding: 2.8rem 3rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.07);
+    transition: transform 0.25s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.3rem;
+    color: #004a99;
+    margin-bottom: 1.1rem;
+    border-bottom: 2px solid #99ccff;
+    padding-bottom: 0.4rem;
+}
+
+section p {
+    font-size: 1.12rem;
+    color: #2e2e2e;
+    margin-bottom: 1.3rem;
+}
+
+section ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.4rem;
+    list-style-type: disc;
+}
+
+section ul li {
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+}
+
+/* Imágenes en secciones */
+section img {
+    display: block;
+    max-width: 750px;
+    width: 100%;
+    margin: 2rem auto 2.5rem auto;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 74, 153, 0.12);
+    object-fit: cover;
+}
+
+/* Imagen del cerebro con tamaño especial */
+#psicologo img {
+    max-width: 350px;
+    margin-bottom: 1.8rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 74, 153, 0.18);
+}
+
+/* LINKS */
+a {
+    color: #007acc;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+a:hover,
+a:focus {
+    color: #004a80;
+    text-decoration: underline;
+    outline: none;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(90deg, #cce7ff 0%, #e6f2ff 100%);
+    color: #004a99;
+    text-align: center;
+    padding: 2.8rem 1rem;
+    font-size: 1rem;
+    border-top: 1px solid #b3d1ff;
+    font-family: 'Merriweather', serif;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 900px) {
+    main {
+        padding: 2rem 5%;
+    }
+
+    nav li {
+        margin: 0 15px;
+    }
+
+    section {
+        padding: 2rem 1.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    section img {
+        max-width: 100%;
+    }
+
+    #psicologo img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 12px 0;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
