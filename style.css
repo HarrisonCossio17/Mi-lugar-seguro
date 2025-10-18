@@ -48,18 +48,36 @@ nav {
     box-shadow: 0 2px 8px rgba(0, 74, 153, 0.1);
 }
 
-nav ul {
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #005999;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+#nav-links {
     list-style: none;
     text-align: center;
     padding: 0.8rem 0;
+    display: flex;
+    gap: 25px;
 }
 
-nav li {
+#nav-links li {
     display: inline-block;
-    margin: 0 25px;
 }
 
-nav a {
+#nav-links a {
     text-decoration: none;
     color: #005999;
     font-weight: 600;
@@ -67,8 +85,8 @@ nav a {
     transition: color 0.3s ease;
 }
 
-nav a:hover,
-nav a:focus {
+#nav-links a:hover,
+#nav-links a:focus {
     color: #002d66;
     outline: none;
 }
@@ -164,14 +182,47 @@ footer {
     font-family: 'Merriweather', serif;
 }
 
-/* RESPONSIVE DESIGN */
-@media screen and (max-width: 900px) {
-    main {
-        padding: 2rem 5%;
+/* ----- RESPONSIVE HAMBURGER MENU ----- */
+@media screen and (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
     }
 
-    nav li {
-        margin: 0 15px;
+    #menu-toggle {
+        display: block;
+    }
+
+    #nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #e6f2ff;
+        display: none;
+        padding: 1rem 0;
+    }
+
+    #nav-links.show {
+        display: flex;
+    }
+
+    #nav-links li {
+        width: 100%;
+        padding: 0.6rem 1rem;
+    }
+
+    #nav-links a {
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
+
+/* MÁS ADAPTACIONES PARA MÓVIL */
+@media screen and (max-width: 480px) {
+    main {
+        padding: 2rem 5%;
     }
 
     section {
@@ -183,33 +234,11 @@ footer {
     }
 
     header h1 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
-    section img {
-        max-width: 100%;
-    }
-
+    section img,
     #psicologo img {
         max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    nav ul {
-        padding: 0;
-    }
-
-    nav li {
-        display: block;
-        margin: 12px 0;
-    }
-
-    nav a {
-        font-size: 1.2rem;
-    }
-
-    header h1 {
-        font-size: 2.2rem;
     }
 }

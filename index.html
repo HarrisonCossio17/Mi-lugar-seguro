@@ -13,17 +13,19 @@
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#bienvenida">Bienvenida</a></li>
-            <li><a href="#relajacion">Espacio de Relajación</a></li>
-            <li><a href="#psicologo">¿Por qué acudir a un Psicólogo?</a></li>
-            <li><a href="#beneficios">Beneficios de la Psicología</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+        <div class="menu-container">
+            <button id="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+            <ul id="nav-links">
+                <li><a href="#bienvenida">Bienvenida</a></li>
+                <li><a href="#relajacion">Espacio de Relajación</a></li>
+                <li><a href="#psicologo">¿Por qué un Psicólogo?</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
-
         <section id="bienvenida">
             <h2>Bienvenida a Mi Lugar Seguro</h2>
             <p>
@@ -91,14 +93,16 @@
             <p>
                 Si quieres más información, asesoramiento profesional o simplemente deseas conversar con un psicólogo certificado, te invitamos a ponerte en contacto con nosotros. Estamos comprometidos a ofrecerte apoyo confiable y respetuoso.
             </p>
-            <p>Email: <a href="mailto:milugarseguro@gmail.com">contacto@milugarseguro.com</a></p>
-            <p>Teléfono: +57 301 378 4576</p>
+            <p>Email: <a href="mailto:contacto@milugarseguro.com">contacto@milugarseguro.com</a></p>
+            <p>Teléfono: +54 9 11 1234 5678</p>
         </section>
-
     </main>
 
     <footer>
         <p>&copy; 2025 Mi Lugar Seguro. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- JS para menú hamburguesa -->
+    <script src="script.js"></script>
 </body>
 </html>
